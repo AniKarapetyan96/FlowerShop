@@ -77,7 +77,30 @@ body{
 	height:300px;
 	background-color:yellow;
 }
-
+.flower-filtr{
+	margin:0 auto;
+	max-width:1200px;
+	float:left;
+	width:100%;
+	height: 62px;
+	background-color:#f37a71;
+	margin-top:6px;
+}
+.ff-first{
+	border: solid 1px black;
+	align-items:center;
+	display:flex;
+	height:51px;
+	width:300px;
+	
+}
+.ff-first-img{
+	
+}
+.span-first{
+	color:#fff;
+	font-weight:70px;
+}
 
 @media (max-width: 769px){
 	.header-top {
