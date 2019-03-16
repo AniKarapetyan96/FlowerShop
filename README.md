@@ -16,5 +16,6 @@
 <p>5.2.git add [file name] </p>
 <p>5.3.git push</p>
 
--------------- URL's -----------------
-https://www.flowerchimp.com/
+<p>
+-------------- URL's -----------------<br>
+<a href="https://www.flowerchimp.com/">Design example url</a></br>
