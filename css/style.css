@@ -3,3 +3,84 @@ body{
 	margin:0px;
 	font-family:tahoma;
 }
+
+
+
+.header-top {
+    background: #f4f6f8;
+    padding: 6px 0;
+    float: left;
+    width: 100%;
+	height:20px;
+	display:block;
+}
+.ht-content{
+	margin:0 auto;
+	max-width:1200px;
+	width:100%;
+	height:100%;
+    background: #000;
+}
+.header-bottom{
+	float:left;
+	width:100%;
+	height:158px;
+	background: #000;
+	margin-top:10px;
+}
+.hb-navbar{
+	background-color: #f37a71;
+	width:100%;
+	height:48px;
+}
+.hb-logo{
+	margin:0 auto;
+	max-width:1200px;
+	width:100%;
+	height:110px;
+	background-color:green;
+	
+}
+.hb-nav-container{
+	margin:0 auto;
+	max-width:1200px;
+	width:100%;
+}
+.hb-nav ul{
+	padding:0px;
+	margin:0px;
+}
+.hb-nav ul li{
+	list-style:none;
+	float:left;
+	margin-right:10px;
+	padding:12px;
+	
+}
+.hb-nav ul li a{
+	color:#fff;
+	font-size:15px;
+	text-decoration:none;
+}
+
+.slider-container{
+	width:100%;
+	float:left;
+	height:300px;
+	background-color:green;
+	
+}
+.sc-slider{
+	margin:0 auto;
+	max-width:1200px;
+	width:100%;
+	height:300px;
+	background-color:yellow;
+}
+
+
+@media (max-width: 769px){
+	.header-top {
+		display:none;
+	}
+}
