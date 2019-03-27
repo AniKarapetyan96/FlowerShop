@@ -13,16 +13,122 @@
 	</div>
 	<div class="header-bottom">
 		<div class="hb-logo">
-		
+			<div class="header-panel">
+				<div class="header-row">
+					  <div class="header-logo">
+						
+						<a href="/" class="desktop-logo">
+						  <img src="images/main-logoo.png" alt="Flower Chimp ">
+						  
+							
+						</a>
+						
+						<!--<a href="/" class="mobile-logo">
+						  <img src="//cdn.shopify.com/s/files/1/1252/1803/t/86/assets/mobile-logo.png?2372">
+						</a>-->
+					  </div>
+						<div class="top-header ">
+						  <div class="top-cart">
+							 
+							<p class="cart">
+							  <span class="icon">&nbsp;</span>
+							  <a href="">
+								<span class="first">Shopping Cart</span>
+								<span id="cartCount">0</span>
+							  </a> 
+							</p>
+							<div id="dropdown-cart"> 
+							  <!--<div class="no-items">
+								<p>Your cart is currently empty.</p>
+								<p class="text-continue"><a href="">Continue Shopping</a></p>
+							  </div>-->
+							  <div class="has-items" style="display: none;">
+								
+								<!--<div class="summary">                
+								  <p class="total">
+									<span class="label"><span>Total</span>:</span>
+									<span class="price"><span class="money">RM 0</span></span> 
+								  </p>
+								</div>
+								<div class="actions">
+								  <button class="btn" onclick="window.location='/cart'">CONTINUE CHECKOUT</button>
+								</div>-->
+							   </div>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="header-panel-bottom">
+							<ul class="customer-links">
+							  
+							  <li>
+								<a id="customer_login_link" href="">Sign In</a>
+								
+								<span class="or">or</span>
+								<a id="customer_register_link" href="">Create an account</a>
+								
+							  </li>
+							</ul>
+						</div>
+						
+							<div class="languages-store">
+							   <span>Deliver to</span>
+							 <div class="language_selector"> Malaysia:
+							 
+							 </div>
+								<ul class="languages-dropdown">
+									<!--<li><a href="">Singapore</a></li>  
+									<li><a href="">Indonesia</a></li>
+									<li><a href="">Phillippines</a></li>-->
+								</ul>
+							</div>
+							<div class="search">
+								<a class="icon-search" href="">Search</a>
+									<form action="/search" method="get" class="input-search-bar" role="search">
+									  
+									  <input type="hidden" name="type" value="product">
+									  
+									  <input type="text" name="q" value="" 
+									  placeholder="search" class="input-field" 
+									  aria-label="Search Site" autocomplete="off">
+									  
+									  <span class="input-group-btn">
+										<input type="submit" class="btn" value="Search">
+									  </span>
+									</form>
+							</div>
+						
+				</div>
+			</div>
+
 		</div>
+	
+
+	
 		<div class="hb-navbar">
-			<nav class="hb-nav">
+			<nav class="hb-nav" role="navigation">
 				<div class="hb-nav-container">
 					<ul>
 						<li>
 							<a href="">
 								<span>BIRTHDAY</span>
-
+								<span class="icon-dropdown"></span>
+								
+								<ul class="dropdown">
+									<li>
+										<a href="" class="">
+											<span>FLOWERS</span>
+										</a>
+										
+									</li>
+        
+									<li>
+										<a href="" class="">
+										<span>BUNDLES</span>
+											
+										</a>
+									</li>
+								</ul>
 							</a>
 						</li>
 						<li>
@@ -33,6 +139,21 @@
 						<li>
 							<a href="">
 								<span>FAVORITES</span>
+								<ul class="dropdown">
+									<li>
+										<a href="" class="">
+											<span>FLOWERS</span>
+										</a>
+										
+									</li>
+        
+									<li>
+										<a href="" class="">
+										<span>BUNDLES</span>
+											
+										</a>
+									</li>
+								</ul>
 							</a>
 						</li>
 						<li>
@@ -77,8 +198,8 @@
 <div class="flower-filtr">
 	<div class="ff-container">
 		<div class="ff-first">
-			<div class="ff-first-img">
-				<img src="//cdn.shopify.com/s/files/1/1252/1803/files/bouquet_1.png?v=1522156184">
+			<div>
+				<img class="ff-first-img" src="images/find-logo.png" >
 			</div>
 			<div ><span class="span-first">Quick Flower Finder</span></div>
 		</div>
@@ -86,21 +207,23 @@
      
 			<div class="clearfix-filter">
 				<p>What's the occasion?</p>
-				<select class="ff-filter-find-select">
-					<option value="">All</option>
-					<option value="birthday">Birthday</option>
-				
-					<option value="anniversary">Anniversary</option>
-				
-					<option value="condolence-flowers">Condolence</option>
-				
-					<option value="get-well">Get Well</option>
-				
-					<option value="romance">Romance</option>
-				
-					<option value="graduation-flower-delivery">Graduation</option>
-				
-			    </select>
+					<div class="ff-select-div" >
+						<select class="ff-select">
+							<option value="">All</option>
+							<option value="birthday">Birthday</option>
+						
+							<option value="anniversary">Anniversary</option>
+						
+							<option value="condolence-flowers">Condolence</option>
+						
+							<option value="get-well">Get Well</option>
+						
+							<option value="romance">Romance</option>
+						
+							<option value="graduation-flower-delivery">Graduation</option>
+						
+						</select>
+					</div>
 			</div>
     
         </div>
@@ -109,7 +232,7 @@
 			<div class="clearfix-filter">
        
 				<p>What's your budget?</p>
-				<select class="ff-filter-find-select">
+				<select class="ff-select">
 					<option value="">All</option>
 					<option value="below-rm100">Below RM100</option>
 					<option value="rm100-rm200">RM100-RM200</option>
@@ -132,7 +255,102 @@
 	</div>
 	
 </div>
+<div></div>
+<div class="section">
+		<div class="row">
+				<div class="widget-title">   
+					  <fieldset class="box-title">
+							<legend align="center">Shop Collections</legend>
+					  </fieldset>
+				</div>
+			
+			<ul class="occasion">
+			  <li>
+				<a href="">
+				<img src="images/happy birthday.jpg" alt=""></a>
+				<a href="" class="occasion-title">Happy birthday</a>	
+			  </li>
+			  <li>
+				<a href="">
+				<img src="images/romance.jpg" alt=""></a>
+				<a href="" class="occasion-title">Romance</a>
+			  </li>
+			  <li>
+				<a href="">
+				<img src="images/3rd img.jpg" alt=""></a>
+				<a href="" class="occasion-title">Get Well Soon</a>	
+			  </li>
+			  <li>
+				<a href="">
+				<img src="images/chocolate.jpg" alt=""></a>
+				<a href="" class="occasion-title">Chocolate Bouquets</a>
+			  </li>
+			  <li>
+				<a href="">
+				<img src="images/condolence.jpg" alt=""></a>
+				<a href="" class="occasion-title">Condolences</a>	
+			  </li>
+			  <li>
+				<a href="">
+				<img src="images/end img.jpg" alt=""></a>
+				<a href="" class="occasion-title">Grand Opening</a>
+			  </li>
+			</ul>
+		  </div>
+</div>
 
+<footer class="site-footer">
+  <div id ="container">
+    <div class="footer-top"> 
+      <div id ="row">
+        <div class="col-1" data-wow-delay="50ms">
+          	<h3>Information</h3>
+            <ul>
+              	<li><a href="" title="">About Us</a></li>
+              	<li><a href="" title="">Blog</a></li>
+              	<li><a href="" title="">Testimonials</a></li>
+              	<li><a href="" title="">Message Ideas</a></li>
+              	<li><a href="" title="">Care Instructions</a></li>
+              	<li><a href="" title="">Corporate</a></li>
+              	<li><a href="" title="">Scholarship</a></li>
+              	<li><a href="" title="">Careers - We are Hiring!</a></li>
+              	<li><a href="" title="">In the News</a></li>
+              	<li><a href="" title="">Flower Delivery Hongkong</a></li>
+              	<li><a href="" title="">Flower Delivery Indonesia</a></li>
+              	<li><a href="" title="">Flower Delivery Philippines</a></li>
+              	<li><a href="" title="">Flower Delivery Singapore</a></li>
+            </ul>
+        </div>
+        
+        <div class="col-2" data-wow-delay="100ms">
+          	<h3>Customer Service</h3>
+            <ul>
+              	<li><a href="" title="">FAQ</a></li>
+              	<li><a href="" title="">Discounts and Voucher Codes</a></li>
+              	<li><a href="" title="">Know your Flowers</a></li>
+              	<li><a href="" title="">Contact Us</a></li>
+              	<li><a href="" title="">Terms and Conditions</a></li>
+              	<li><a href="" title="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        
+        <div class="col-3" data-wow-delay="200ms">
+          	<h3>Stay Connected </h3>
+			<ul class="social">
+  
+				<li class="facebook"><a href="" title="Facebook"><span>Facebook</span></a></li>
+				<li class="instagram"><a href="" title="Instagram"><span>Instagram</span></a></li>
+			</ul>
+			<div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      	  <address>© 2016 Flower Chimp. All Rights Reserved.</address>
+    </div>
+  </div>
+	
+</footer>
 
 </body>
 </html>
